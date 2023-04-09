@@ -4,7 +4,7 @@
 
 Can select any period within the past and future 6 months.
 
-## Getting Started with Create React App
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
