@@ -20,9 +20,11 @@ export const UpcomingReservations = () => {
 
   // Sort by pickup date and turn into array of objects for each table row
   const pickupArr = Object.entries(pickups).sort((a, b) => {
-    const dateA = new Date(a.pickupDate);
-    const dateB = new Date(b.pickupDate);
-    return dateA - dateB;
+    if (a[0] <= b[0]) {
+      return -1;
+    } else{
+      return 1; // compare date strings
+    }
   }).map((item) => {
     const day = new Date(item[0]);
     return ({
@@ -30,14 +32,14 @@ export const UpcomingReservations = () => {
       customers: item[1][0],
       items: item[1][1],
     });
-  })
+  }).slice(0, 5);
 
   // Do the same for returns
   var returns = {};
   customerData
-    .filter((order) => ('pickupDate' in order && (school === "All Schools" || school === order.school)))
+    .filter((order) => ('returnDate' in order && (school === "All Schools" || school === order.school)))
     .forEach((order) => {
-      if (order.returnDate in pickups) {
+      if (order.returnDate in returns) {
         returns[order.returnDate][0] += 1;
         returns[order.returnDate][1] += order.numItems;
       } else {
@@ -47,9 +49,11 @@ export const UpcomingReservations = () => {
 
   // Sort by return date, turn into array of objects for each table row
   const returnArr = Object.entries(returns).sort((a, b) => {
-    const dateA = new Date(a.returnDate);
-    const dateB = new Date(b.returnDate);
-    return dateA - dateB;
+    if (a[0] <= b[0]) {
+      return -1;
+    } else{
+      return 1; // compare date strings
+    }
   }).map((item) => {
     const day = new Date(item[0]);
     return ({
@@ -57,7 +61,7 @@ export const UpcomingReservations = () => {
       customers: item[1][0],
       items: item[1][1],
     });
-  })
+  }).slice(0, 5);
 
   return (
     <>

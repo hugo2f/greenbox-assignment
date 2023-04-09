@@ -10,8 +10,8 @@ import 'moment/locale/en-gb';
 export const RevenueChart = () => {
   const { RangePicker } = DatePicker;
   // Time range considered: dates[0] to dates[1]
-  // Default past 3 months, can go back and forward at most 6 months
-  const [dates, setDates] = useState([moment().subtract(6, 'months').startOf('month'), moment().endOf('month')]);
+  // Default past 4 months, can go back and forward at most 6 months
+  const [dates, setDates] = useState([moment().subtract(3, 'months').startOf('month'), moment().endOf('month')]);
   const { school, setSchool } = useContext(SchoolContext);
 
   const handleDateChange = (date, dateString) => {

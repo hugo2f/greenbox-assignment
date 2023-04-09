@@ -4,6 +4,10 @@
 
 Can select any period within the past and future 6 months.
 
+## Upcoming Reservations
+
+The most recent pickup/return dates are displayed, up to 5 dates each
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
