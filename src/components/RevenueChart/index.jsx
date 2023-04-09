@@ -70,9 +70,9 @@ export const RevenueChart = () => {
   if (dates[1] < dates[0]) {
     var data = [];
   } else {
-    var data = new Array((toYear - curYear) * 12 + toMonth - curMonth); // TODO: date range can change
+    var data = new Array((toYear - curYear) * 12 + toMonth - curMonth + 1); // TODO: date range can change
   }
-  for (var idx = data.length; idx >= 0; idx--) {
+  for (var idx = 0; idx < data.length; idx++) {
     if (curMonth > 12) {
       curMonth -= 12;
       curYear += 1;
