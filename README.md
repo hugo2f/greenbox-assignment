@@ -1,6 +1,6 @@
 # Greenbox Storage
 
-[I'm an inline-style link](https://hugo2f.github.io/)
+[I'm an inline-style link](https://hugo2f.github.io/ "title")
 
 ## Revenue Bar Graph
 
