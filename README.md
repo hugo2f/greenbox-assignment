@@ -1,5 +1,7 @@
 # Greenbox Storage
 
+[Web version](https://hugo2f.github.io/)
+
 ## Revenue Bar Graph
 
 Can select any period within the past and future 6 months.
