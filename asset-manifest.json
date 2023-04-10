@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/greenbox-coding-challenge/static/css/main.f71cab81.css",
-    "main.js": "/greenbox-coding-challenge/static/js/main.47d7fa5a.js",
-    "static/js/787.0148252b.chunk.js": "/greenbox-coding-challenge/static/js/787.0148252b.chunk.js",
-    "static/media/logo.png": "/greenbox-coding-challenge/static/media/logo.024f74e5949bba3c7984.png",
-    "index.html": "/greenbox-coding-challenge/index.html",
-    "main.f71cab81.css.map": "/greenbox-coding-challenge/static/css/main.f71cab81.css.map",
-    "main.47d7fa5a.js.map": "/greenbox-coding-challenge/static/js/main.47d7fa5a.js.map",
-    "787.0148252b.chunk.js.map": "/greenbox-coding-challenge/static/js/787.0148252b.chunk.js.map"
+    "main.css": "/static/css/main.f71cab81.css",
+    "main.js": "/static/js/main.82414ceb.js",
+    "static/js/787.0148252b.chunk.js": "/static/js/787.0148252b.chunk.js",
+    "static/media/logo.png": "/static/media/logo.024f74e5949bba3c7984.png",
+    "index.html": "/index.html",
+    "main.f71cab81.css.map": "/static/css/main.f71cab81.css.map",
+    "main.82414ceb.js.map": "/static/js/main.82414ceb.js.map",
+    "787.0148252b.chunk.js.map": "/static/js/787.0148252b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f71cab81.css",
-    "static/js/main.47d7fa5a.js"
+    "static/js/main.82414ceb.js"
   ]
 }
