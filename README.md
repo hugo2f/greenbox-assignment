@@ -1,6 +1,6 @@
 # Greenbox Storage
 
-[Web version](https://hugo2f.github.io/)
+[Web version](https://hugo2f.github.io/) (no longer in use)
 
 ## Revenue Bar Graph
 
